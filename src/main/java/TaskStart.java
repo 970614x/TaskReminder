@@ -1,6 +1,3 @@
-package pl.chrislembr.task;
-
-
 import org.springframework.boot.SpringApplication;
 
 public class TaskStart {
