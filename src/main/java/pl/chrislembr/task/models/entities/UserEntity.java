@@ -12,6 +12,11 @@ public class UserEntity {
     private @Id @GeneratedValue int id;
     private String login;
     private String password;
+    private String name;
+    private String surname;
+    private String city;
+    @Column(name = "zip-doe")
+    private String zipCode;
 
     public int getId() {
         return id;
@@ -19,6 +24,38 @@ public class UserEntity {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
+    public void setZipCode(String zipCode) {
+        this.zipCode = zipCode;
     }
 
     public String getLogin() {
