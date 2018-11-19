@@ -16,7 +16,7 @@
 
         <p th:if="${#fields.hasErrors('password')}"  th:errors="*{password}"></p>
         <input type="password" th:field="*{password}" placeholder="password"><br/>
-        <input type="password" th:field="*{repeat password}" placeholder="repeat password"><br/>
+
 
         <p th:if="${#fields.hasErrors('name')}"  th:errors="*{name}"></p>
         <input type="text" th:field="*{name}" placeholder="name"><br/>
