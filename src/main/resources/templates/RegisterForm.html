@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="text-align: center;">
+    <h1 th:text="${registerInfo}"></h1>
+
+
+
+    <form action="/user/add" method="post" th:object="${registerForm}">
+        <p th:if="${#fields.hasErrors('login')}"  th:errors="*{login}"></p>
+        <input type="text" th:field="*{login}" placeholder="Login"><br/>
+
+        <p th:if="${#fields.hasErrors('password')}"  th:errors="*{password}"></p>
+        <input type="password" th:field="*{password}" placeholder="password"><br/>
+        <input type="password" th:field="*{repeat password}" placeholder="repeat password"><br/>
+
+        <p th:if="${#fields.hasErrors('name')}"  th:errors="*{name}"></p>
+        <input type="text" th:field="*{name}" placeholder="name"><br/>
+
+
+        <p th:if="${#fields.hasErrors('nazwisko')}"  th:errors="*{nazwisko}"></p>
+        <input type="text" th:field="*{nazwisko}" placeholder="nazwisko"><br/>
+
+        <p th:if="${#fields.hasErrors('zip-code')}"  th:errors="*{zip-code}"></p>
+        <input type="text" th:field="*{zip-code}" placeholder="zip-code"><br/>
+
+        <p th:if="${#fields.hasErrors('city')}"  th:errors="*{city}"></p>
+        <input type="text" th:field="*{city}" placeholder="city"><br/>
+
+        <input type="submit" value="Sign up"><br/>
+    </form>
+</div>
+</body>
+</html>
