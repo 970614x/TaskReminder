@@ -13,6 +13,9 @@ import pl.chrislembr.task.models.forms.RegisterForm;
 
 import javax.validation.Valid;
 
+
+
+
 @Controller
 public class UserController {
 
