@@ -14,7 +14,7 @@ public class RegisterForm {
     private String password;
     private String name;
     private String surname;
-    @Pattern(regexp = "//d{2}.//d{3}") //todo regexp
+    @Pattern(regexp = "\\d{2}-\\d{3}")
     private String zipCode;
     private String city;
 
